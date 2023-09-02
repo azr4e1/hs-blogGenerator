@@ -20,16 +20,6 @@ el :: String -> String -> String
 el tag content =
     "<" ++ tag ++ ">" ++ content ++ "</" ++ tag ++ ">"
 
-
--- body_ :: String -> Structure
--- body_  = Structure . el "body"
---
--- head_ :: String -> Structure
--- head_ = Structure . el "head"
---
--- title_ :: String -> Structure
--- title_ = Structure . el "title"
-
 p_ :: String -> Structure
 p_ = Structure . el "p"
 
@@ -40,16 +30,8 @@ append_ :: Structure -> Structure -> Structure
 append_ (Structure str1) (Structure str2) =
     Structure (str1 ++ str2)
 
-
--- makeHTML :: String -> String -> Html
--- makeHTML title content = html_ body
---     where body = head_ (title_ title) `append_` body_ content
-
-
--- getStructureString :: Structure -> String
--- getStructureString struct =
---     case struct of
---         Structure str -> str
+getStructureString :: Structure -> String
+getStructureString (Structure struct) = struct
 
 render :: Html -> String
 render (Html str) = str
