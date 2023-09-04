@@ -3,3 +3,4 @@
 *.hi
 MainConcat.hs
 *.txt
+dist-newstyle

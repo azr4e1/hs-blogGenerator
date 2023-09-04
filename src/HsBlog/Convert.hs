@@ -1,7 +1,7 @@
 module HsBlog.Convert where
 
-import qualified HsBlog.Markup
-import qualified HsBlog.Html
+import qualified HsBlog.Markup as Markup
+import qualified HsBlog.Html as Html
 
 convertStructure :: Markup.Structure -> Html.Structure
 convertStructure structure =
