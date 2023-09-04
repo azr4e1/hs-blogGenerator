@@ -1,6 +1,6 @@
-import qualified Convert
-import qualified Markup
-import qualified Html
+import qualified HsBlog.Convert
+import qualified HsBlog.Markup
+import qualified HsBlog.Html
 import System.Directory (doesFileExist)
 import System.Environment (getArgs)
 

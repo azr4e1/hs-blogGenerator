@@ -1,4 +1,4 @@
-module Markup.Internal
+module HsBlog.Markup.Internal
 where
 
 import Numeric.Natural
