@@ -4,3 +4,4 @@
 MainConcat.hs
 *.txt
 dist-newstyle
+test.hs
